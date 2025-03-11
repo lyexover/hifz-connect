@@ -1,0 +1,68 @@
+@import "./palette.module.css";
+
+.logo {
+  max-width: 240px;
+  height: auto;
+  position: relative;
+  left: 0.5rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--header-green-dark);
+  font-size: 1.2rem;
+  padding: 0 1rem 0 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  list-style: none;
+  font-size: 1.2rem;
+}
+.link {
+  text-decoration: none;
+  color: white;
+  transition: 0.1s ease;
+}
+.link:hover {
+  opacity: 0.7;
+}
+
+.auth_buttons {
+  display: flex;
+  gap: 1.1rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  right: 0.7rem;
+}
+.login_button {
+  padding: 0.5rem 0.8rem;
+  border: 1px solid #f0f0f0;
+  border-radius: 0.4rem;
+  background-color: transparent;
+  text-decoration: none;
+  color: white;
+  transition: 0.2s ease;
+}
+.login_button:hover {
+  opacity: 0.7;
+}
+
+.signup_button {
+  padding: 0.5rem 0.8rem;
+  background-color: #f1c40f;
+  border-radius: 0.4rem;
+  border: none;
+  color: #333333;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+.signup_button:hover {
+  background-color: #f1c40f9e;
+}

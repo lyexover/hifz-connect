@@ -1,0 +1,36 @@
+:root {
+  /* Couleurs principales pour l'arrière-plan de l'en-tête */
+  --header-green-vibrant: #2ecc71;
+  --header-green-elegant: #27ae60;
+  --header-green-dark: #219653; /* Vert plus foncé pour la profondeur */
+
+  /* Variantes de vert pour différentes parties de l'interface */
+  --header-green-light: #6fcf97; /* Vert plus clair pour les accents */
+  --header-green-hover: #229954;
+
+  /* Couleurs pour le logo */
+  --logo-white: #ffffff;
+  --logo-gold: #f1c40f;
+  --logo-gold-light: #f7dc6f; /* Or plus clair pour des accents */
+
+  /* Couleurs pour la navigation */
+  --nav-text-white: #ffffff;
+  --nav-text-light-gray: #f0f0f0;
+  --nav-text-off-white: #e8f0fe; /* Blanc cassé pour un contraste doux */
+  --nav-hover-green: #229954;
+  --nav-hover-gold: #f1c40f;
+  --nav-active: #f8f9fa; /* Pour indiquer le lien actif */
+
+  /* Couleurs complémentaires pour d'autres éléments */
+  --accent-teal: #1abc9c; /* Turquoise qui se marie bien avec le vert */
+  --accent-blue: #3498db; /* Bleu pour les liens ou CTA secondaires */
+
+  /* Paramètres du thème actuel */
+  --header-background: var(--header-green-vibrant);
+  --header-border-bottom: var(--header-green-dark);
+  --logo-color: var(--logo-white);
+  --nav-text-color: var(--nav-text-white);
+  --nav-hover-color: var(--nav-hover-gold);
+  --nav-active-color: var(--nav-active);
+  --button-background: var(--accent-teal);
+}
