@@ -66,3 +66,160 @@
 .signup_button:hover {
   background-color: #f1c40f9e;
 }
+.hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .logo_container {
+    margin: 0 auto;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    z-index: 20;
+    position: absolute;
+    right: 1rem;
+  }
+
+  .hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px 0;
+    background-color: var(--nav-text-color);
+    transition: all 0.3s;
+  }
+
+  .nav_container {
+    position: absolute;
+    top: 0; /* Adjust based on your header height */
+    left: 0;
+    width: 100%;
+    background-color: var(--header-background);
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 0.3s;
+    z-index: 10;
+  }
+
+  .nav_container.opened {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  .nav {
+    flex-direction: column;
+    padding: 2px;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 0 0.7rem 0;
+  }
+
+  .logo_container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .auth_buttons {
+    right: 0;
+    font-size: 1rem;
+  }
+}
+
+/* intro ----------------------------------------------------------*/
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 3rem;
+}
+
+.intro_image {
+  width: 90%;
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+.intro_text {
+  flex: 1;
+  width: 50%;
+}
+
+.img_container {
+  flex: 1;
+  max-width: 50%;
+}
+
+.intro_text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--header-green-dark);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.intro_text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  color: #444;
+}
+
+.intro_text p strong {
+  color: var(--header-green-elegant);
+  font-weight: 600;
+}
+
+.intro_text a {
+  display: inline-block;
+  background-color: var(--accent-teal);
+  color: white;
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.intro_text a:hover {
+  background-color: var(--header-green-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.arabic {
+  /* Add this specific selector for your Quranic verse */
+  font-family: var(--font-amiri), serif;
+}
+
+@media screen and (max-width: 480px) {
+  .intro {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .intro_text {
+    width: 100%;
+  }
+
+  .img_container {
+    max-width: 100%;
+  }
+
+  .intro_image {
+    width: 100%;
+  }
+}
