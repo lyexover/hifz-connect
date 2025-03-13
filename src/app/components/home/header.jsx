@@ -4,10 +4,12 @@ import Image from "next/image"
 import styles from '../css-modules/home.module.css'
 import Link from "next/link"
 import { useState } from "react"
+import { ScanFace, UserPlus } from "lucide-react";
 
 export default function Header(){
 
 const [opened, setOpened] = useState(false)
+
 
 const toggleMenu = () => {
     setOpened(!opened);
@@ -16,7 +18,7 @@ const toggleMenu = () => {
     return (
         <div className={styles.header}>
             <div className={styles.logo_container}>
-               <Image className={styles.logo} src={'/logo.png'} width={320} height={140} alt="logo"/> 
+               <Image  className={styles.logo} src={'/logo.png'} width={320} height={140} alt="logo" /> 
                <div className={styles.hamburger} onClick={toggleMenu}>
                         <span></span>
                         <span></span>
@@ -33,11 +35,12 @@ const toggleMenu = () => {
             </div>
 
             <div className={styles.auth_buttons}>
-                  <a className={styles.login_button} href="#auth">Log-in</a>
-                  <a className={styles.signup_button} href="#auth">Sign-up</a>
+                  <a className={styles.login_button} href="#auth">  <ScanFace size={19} /> Log-in</a>
+                  <a className={styles.signup_button} href="#auth"> <UserPlus size={18} /> Sign-up</a>
             </div>
 
             
         </div>
     )
 }
+
