@@ -18,14 +18,14 @@ useEffect(()=> {
             observer.unobserve(entry.target)   // setvisible est true donc plus besoin de l'observer
         } 
     } , 
-    { threshold: 0.2 }  //executer la fonction lorseque 20% de l'element est visible 
+    { threshold: 0.1 }  //executer la fonction lorseque 20% de l'element est visible 
    )  
 
 
    if(ref.current) {observer.observe(ref.current)}     // si la reference n'est pas null , on apelle la fonction
 
    return () => {
-    if (sectionRef.current) observer.unobserve(sectionRef.current);  //cleanup
+    if (ref.current) observer.unobserve(ref.current);  //cleanup
    };
 
 }, [])
