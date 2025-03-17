@@ -8,6 +8,7 @@ import styles from '../css-modules/home.module.css'
 export default function Auth() {
   const [isSignup, setIsSignup] = useState(false);
   
+
   // Use the authentication action based on the current mode (signup or login)
   const authenticate = isSignup ? signup : login;
   

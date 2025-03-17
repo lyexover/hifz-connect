@@ -17,12 +17,13 @@ export const authConfig = {
             } 
             else if (isLoggedIn) {  
                 
-                return Response.redirect(new URL('/home', nextUrl)); 
+                return Response.redirect(new URL('/home', nextUrl.origin)); 
             }
 
             return true; // Autorise l'accès aux autres pages
-        }, 
+        } 
 
-        providers: [], // Liste des fournisseurs d'authentification (Google, GitHub, etc.), à remplir si nécessaire
-    }
+      
+
+          } 
 };

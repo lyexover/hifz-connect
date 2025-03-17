@@ -33,11 +33,7 @@ export const { auth, signIn, signOut } = NextAuth({
                 if (passwordMatch) {
                    
                      console.log('connected successfully')
-                    return {
-                        id: user.id,
-                        name: user.name,
-                        email: user.email
-                    };
+                    return user ;
                 }
                 
                 return null;
