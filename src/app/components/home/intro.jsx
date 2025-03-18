@@ -22,12 +22,26 @@ export default function Intro(){
             </div>
 
             <div className={styles.img_container}>
-                <Image placeholder="blur" blurDataURL={'/blurred-intro-image.jpg'}
+                {/* <Image placeholder="blur" blurDataURL={'/blurred-intro-image.jpg'}
                  className={`${styles.intro_image} ${loaded ? styles.loaded : ""}`}
                  src={'/intro-image.png'} alt="quran reading" width={3024} height={2135}
                  onLoad={() => setLoaded(true)}
-                 />
-            </div>
+                 /> */}
+
+                <video
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                          className={styles.heroVideo}
+                          preload="auto"
+                        >
+                          <source src="/intro-video.mp4" type="video/mp4" />
+                          
+                          Your browser does not support the video tag.
+                  </video>
+                                 
+                            </div>
         </section>
     )
 }
