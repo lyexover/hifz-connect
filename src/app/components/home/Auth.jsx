@@ -17,6 +17,7 @@ export default function Auth() {
 
   return (
     <section id="auth" className={styles.authSection}>
+  
       <div className={styles.authContainer}>
         <div className={styles.authHeader}>
           <h2>{isSignup ? 'Create an Account' : 'Welcome Back'}</h2>
