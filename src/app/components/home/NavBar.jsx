@@ -22,7 +22,7 @@ export default function NavBar() {
 
                 <div className={styles.links}>
                     <Link href=''><House size={20} /> Home</Link>
-                    <Link href=''><CircleUserRound size={20} /> My Profile</Link>
+                    <Link href='/profile'><CircleUserRound size={20} /> My Profile</Link>
                     <Link href=''><BookMarked size={20} /> Memorize</Link>
                     <Link href=''><BookOpen size={20} /> Read Quran</Link>
                 </div>
@@ -33,8 +33,8 @@ export default function NavBar() {
 
                 <div className={styles.mobileLayout}>
                     <div className={styles.mobileIcons}>
-                        <Link href=''><CircleUserRound size={25} /> Profile</Link>
-                        <button onClick={toggleMenu}><Menu size={30} /></button>
+                        <Link href='/profile'><CircleUserRound size={30} /></Link>
+                        <button onClick={toggleMenu}><Menu size={35} /></button>
                     </div>
                 </div>
             </nav>
