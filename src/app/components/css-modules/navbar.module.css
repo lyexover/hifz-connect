@@ -37,6 +37,8 @@
   flex-direction: column;
   gap: 0.75rem;
   padding: 0 1rem;
+  position: relative;
+  top: 3rem;
 }
 
 .links a {
@@ -45,7 +47,7 @@
   gap: 0.75rem;
   color: var(--nav-text-white);
   text-decoration: none;
-  font-weight: 550;
+  font-weight: 500;
   font-size: 1.1rem;
   transition: all 0.2s ease;
   padding: 0.75rem 1rem;

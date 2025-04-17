@@ -1,0 +1,123 @@
+.profileHeader {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.couvertureContainer {
+  position: relative;
+  width: 100%;
+  height: 250px;
+}
+
+.couvertureImage {
+  object-position: center;
+}
+
+.profileContent {
+  position: relative;
+  padding: 0 24px 24px;
+}
+
+.pdpContainer {
+  border-radius: 50%;
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  background-color: var(--logo-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -65px;
+  left: 30px;
+}
+
+.initials {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.userInfo {
+  padding-top: 80px;
+}
+
+.nameContainer {
+  margin: 0 0 12px 0;
+  padding-left: 6px;
+}
+
+.name {
+  display: block;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.username {
+  display: block;
+  font-size: 1rem;
+  color: #536471;
+  font-weight: normal;
+}
+
+.bio {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #0f1419;
+  margin: 12px 0 0 6px;
+  max-width: 80%;
+}
+
+/* nav ================================================*/
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 2px solid #d8d8d8;
+  padding-bottom: 0.5rem;
+  padding-left: 3.5rem;
+  gap: 1rem;
+}
+
+.nav button {
+  border: none;
+  background-color: transparent;
+}
+
+.nav button a {
+  text-decoration: none;
+  color: rgb(62, 62, 62);
+  font-size: 0.9rem;
+  font-weight: 540;
+}
+.nav button.active a {
+  color: black;
+}
+
+.nav button.active {
+  position: relative;
+}
+
+.nav button::after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--header-green-dark);
+  transition: width 0.3s ease-in-out;
+}
+
+.nav button.active::after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--header-green-dark);
+}
