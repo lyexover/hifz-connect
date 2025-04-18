@@ -25,7 +25,7 @@
   width: 130px;
   height: 130px;
   position: absolute;
-  background-color: var(--logo-gold);
+  background-color: var(--header-green-light);
   display: flex;
   align-items: center;
   justify-content: center;

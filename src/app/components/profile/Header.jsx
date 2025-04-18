@@ -7,7 +7,7 @@ export default function ProfileHeader() {
       <div className={styles.couvertureContainer}>
         <Image
           className={styles.couvertureImage}
-          src="/couverture.jpg"
+          src="/couverture2.jpg"
           alt="Couverture"
           fill
           style={{ objectFit: 'cover' }}
