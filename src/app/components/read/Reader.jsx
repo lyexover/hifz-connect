@@ -1,8 +1,9 @@
 'use client'
 import { useState } from "react"
 import styles from "@/app/components/css-modules/read.module.css"
-import { ArrowUp, ChevronLeft, ChevronRight } from "lucide-react"
+import {  ChevronLeft, ChevronRight } from "lucide-react"
 import { useRouter } from "next/navigation"
+import ToTop from "@/app/components/read/toTopButton";
 
 export default function Reader({ surah, firstPage, lastPage }) {
     const router = useRouter()
@@ -55,6 +56,14 @@ export default function Reader({ surah, firstPage, lastPage }) {
             <div className={styles.navigation}>
                 <span className={styles.pageNumber}>Page {currentPage}</span>
                 <div className={styles.pageButtons}>
+
+                <button 
+                        className={styles.navButton}
+                        onClick={() => setCurrentPage(currentPage + 1)} 
+                        disabled={currentPage >= lastPage}
+                    >
+                        Next Page
+                    </button>
                     <button 
                         className={styles.navButton}
                         onClick={() => setCurrentPage(currentPage - 1)} 
@@ -62,21 +71,11 @@ export default function Reader({ surah, firstPage, lastPage }) {
                     >
                         Previous Page
                     </button>
-                    <button 
-                        className={styles.navButton}
-                        onClick={() => setCurrentPage(currentPage + 1)} 
-                        disabled={currentPage >= lastPage}
-                    >
-                        Next Page
-                    </button>
+                    
                 </div>
             </div>
 
-            <div className={styles.toTop} >
-                <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-                   <ArrowUp />
-                </button>
-            </div>
+            <ToTop/>
         </div>
     )
 }
